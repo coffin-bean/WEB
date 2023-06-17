@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil</title>
+  <link rel="stylesheet" href="./style/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="header_logo green">
+    <a class="header_logo_svg" href="index.html" >ЛОГОТИП</a>
+  </div>
+  <div class="header_main">
+    <ul class="header_main_lists">
+      <li id="list1" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" id="profil" href="#">Профиль</a></li>
+      <li id="list2" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="catalog.html">Каталог</a></li>
+      <li id="list3" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="deliver.html">Доставка</a></li>
+      <li id="list4" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="favorite.html">Избранное</a></li>
+      <li id="list5" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="aboutUs.html">О нас</a></li>
+      <input class="search" type="text" id="textarea" name="name" placeholder="Введите название товара">
+      <button id="lupa" class="header_main_lists_btn">
+        <svg class="header_main_lists_btn_lupa" >
+          <circle class="header_main_lists_btn_lupa_details" cx="8" cy="8" r="7"/>
+          <line class="header_main_lists_btn_lupa_details" x1="13.5091" y1="12.3513" x2="20.6362" y2="18.2284"/>
+        </svg>
+      </button>
+      <div class="header_main_lists_icons">
+        <svg class="header_main_lists_icons_basket" >
+          <rect width="40" height="42" rx="8" fill="#CAD7AE"/>
+          <circle class="basket" cx="12" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+          <circle class="basket" cx="28" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+          <path class="basket" d="M29.5 27.5C29.5 27.5 11 27.5 9.5 27.5C7.91886 27.5 13 23 13 23C13 23 8.99997 9.00013 7.5 9.00005C6.00003 8.99997 5 9.00005 5 9.00005" stroke="#2C2E2A" stroke-width="2" stroke-linecap="round"/>
+          <path class="basket" d="M33.5 11.0002C29.5 10.5001 9.50003 11.0003 9.50003 11.0003L13 23.0001H27.5C30 23.0001 35.2888 11.2239 33.5 11.0002Z" fill="#2C2E2A" stroke="#2C2E2A"/>
+        </svg>
+      </div>
+    </ul>
+    <div id="menu" class="sub_menu">
+      <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="notions.html">Уведомления</a></li>
+      <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="#">Личный кабинет</a></li>
+      <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="cheks.html">Финансы</a></li>
+    </div>
+  </div>
+  <div class="header_numb">
+    <div class="header_numb_icon">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="circle" cx="20" cy="20" r="19.5" />
+        <path d="M18.7098 14C18.7098 14.9763 17.2098 16 17.2098 16C17.2098 16 15.7099 16.9143 15.7099 17.5001C15.7099 18.0001 15.9866 20.479 17.7098 22.5C19.6395 24.7632 22.2099 25.5 23.7099 25.0001C24.4508 24.7531 24.7098 23.5 24.7098 23.5C25.0973 22.6039 25.7997 22.3535 26.7098 22C27.9969 21.5001 32.2099 27.0001 32.2099 27.5001C32.2099 30.127 30.3382 31.2265 28.7099 32.0001C24.5 34 15.9846 26.7748 14.7098 25.5C13.7099 24.5001 7.50003 17.0001 9 13C9.92237 10.5403 11.7098 8 13.2098 8C14.2098 8 18.7098 12 18.7098 14Z" fill="#FEFDF7" stroke="#FEFDF7"/>
+      </svg>
+    </div>
+    <div class="header_numb_phone">
+      <p class="header_numb_phone_text">
+        +7 (999)999-99-99
+      </p>
+    </div>
+  </div>
+</header>
+
+</div>
+<div class="wrapper_p">
+  <div class="row1">
+    <div class="row1_profil">
+      <div class="profil_wrapper">
+        <img class="row1_profil_ava" src="./pics/ava_2.png" alt="">
+        <div class="row1_profil_column2">
+          <div class="row1_profil_column2_header">
+            <p class="row1_profil_column2_header_name">Иван Иванов</p>
+            <a href="settings_profil.html" class="row1_profil_column2_header_settings">
+              <img src="./pics/settings_icon.png" alt="" class="row1_profil_column2_header_settenind_pic">
+            </a>
+            <a href="notions.html" class="row1_profil_column2_header_updates">
+              <img src="./pics/notification_icon.png" alt="" class="row1_profil_column2_header_updates_pic">
+          </a>
+          </div>
+          <button class="row1_profil_column2_header_btn">Выйти</button>
+        </div>
+      </div>
+      <div class="row1_profil_subtitle">
+        <div class="row1_profil_subtitle_row1">
+          <p class="row1_profil_subtitle_row1_title">Почта</p>
+          <p class="row1_profil_subtitle_row1_title">Телефон</p>
+        </div>
+
+        <div class="row1_profil_subtitle_row2">
+          <p class="row1_profil_subtitle_row2_title">mailEmail@mail</p>
+          <p class="row1_profil_subtitle_row2_title">+7(911) 111-11-11</p>
+        </div>
+      </div>
+    </div>
+    <div class="row1_discount">
+      <div class="row1_discount_header">
+        <svg class="row1_dicount_header_ava"  width="143" height="143" viewBox="0 0 143 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.7983 86V82.8182L43.642 72.6193C44.6932 71.5114 45.5597 70.5407 46.2415 69.7074C46.9328 68.8646 47.4489 68.0644 47.7898 67.3068C48.1307 66.5492 48.3011 65.7443 48.3011 64.892C48.3011 63.9261 48.0739 63.0928 47.6193 62.392C47.1648 61.6818 46.5445 61.1373 45.7585 60.7585C44.9725 60.3703 44.0871 60.1761 43.1023 60.1761C42.0606 60.1761 41.1515 60.3892 40.375 60.8153C39.5985 61.2415 39.0019 61.8428 38.5852 62.6193C38.1686 63.3958 37.9602 64.3049 37.9602 65.3466H33.7699C33.7699 63.5758 34.1771 62.0275 34.9915 60.7017C35.8059 59.3759 36.9233 58.3485 38.3438 57.6193C39.7642 56.8807 41.3788 56.5114 43.1875 56.5114C45.0152 56.5114 46.625 56.8759 48.017 57.6051C49.4186 58.3248 50.5123 59.3097 51.2983 60.5597C52.0843 61.8002 52.4773 63.2017 52.4773 64.7642C52.4773 65.8438 52.2737 66.8996 51.8665 67.9318C51.4688 68.964 50.7727 70.1146 49.7784 71.3835C48.7841 72.643 47.4015 74.1723 45.6307 75.9716L39.8494 82.0227V82.2358H52.946V86H33.7983ZM58.3295 86V82.8182L68.1733 72.6193C69.2244 71.5114 70.0909 70.5407 70.7727 69.7074C71.464 68.8646 71.9801 68.0644 72.321 67.3068C72.6619 66.5492 72.8324 65.7443 72.8324 64.892C72.8324 63.9261 72.6051 63.0928 72.1506 62.392C71.696 61.6818 71.0758 61.1373 70.2898 60.7585C69.5038 60.3703 68.6184 60.1761 67.6335 60.1761C66.5919 60.1761 65.6828 60.3892 64.9062 60.8153C64.1297 61.2415 63.5331 61.8428 63.1165 62.6193C62.6998 63.3958 62.4915 64.3049 62.4915 65.3466H58.3011C58.3011 63.5758 58.7083 62.0275 59.5227 60.7017C60.3371 59.3759 61.4545 58.3485 62.875 57.6193C64.2955 56.8807 65.91 56.5114 67.7188 56.5114C69.5464 56.5114 71.1563 56.8759 72.5483 57.6051C73.9498 58.3248 75.0436 59.3097 75.8295 60.5597C76.6155 61.8002 77.0085 63.2017 77.0085 64.7642C77.0085 65.8438 76.8049 66.8996 76.3977 67.9318C76 68.964 75.304 70.1146 74.3097 71.3835C73.3153 72.643 71.9328 74.1723 70.1619 75.9716L64.3807 82.0227V82.2358H77.4773V86H58.3295ZM98.0455 80.5455V79.0114C98.0455 77.9129 98.2727 76.9091 98.7273 76C99.1913 75.0814 99.8636 74.3475 100.744 73.7983C101.634 73.2396 102.709 72.9602 103.969 72.9602C105.257 72.9602 106.336 73.2348 107.207 73.7841C108.079 74.3333 108.737 75.0672 109.182 75.9858C109.636 76.9044 109.864 77.9129 109.864 79.0114V80.5455C109.864 81.6439 109.636 82.6525 109.182 83.571C108.727 84.4801 108.06 85.214 107.179 85.7727C106.308 86.322 105.238 86.5966 103.969 86.5966C102.69 86.5966 101.611 86.322 100.73 85.7727C99.8494 85.214 99.1818 84.4801 98.7273 83.571C98.2727 82.6525 98.0455 81.6439 98.0455 80.5455ZM101.355 79.0114V80.5455C101.355 81.3598 101.549 82.0985 101.938 82.7614C102.326 83.4242 103.003 83.7557 103.969 83.7557C104.925 83.7557 105.593 83.4242 105.972 82.7614C106.35 82.0985 106.54 81.3598 106.54 80.5455V79.0114C106.54 78.197 106.355 77.4583 105.986 76.7955C105.626 76.1326 104.954 75.8011 103.969 75.8011C103.022 75.8011 102.349 76.1326 101.952 76.7955C101.554 77.4583 101.355 78.197 101.355 79.0114ZM83.4148 63.8977V62.3636C83.4148 61.2652 83.642 60.2566 84.0966 59.3381C84.5606 58.4195 85.233 57.6856 86.1136 57.1364C87.0038 56.5871 88.0786 56.3125 89.3381 56.3125C90.6259 56.3125 91.7055 56.5871 92.5767 57.1364C93.4479 57.6856 94.1061 58.4195 94.5511 59.3381C94.9962 60.2566 95.2188 61.2652 95.2188 62.3636V63.8977C95.2188 64.9962 94.9915 66.0047 94.5369 66.9233C94.0919 67.8324 93.429 68.5663 92.5483 69.125C91.6771 69.6742 90.607 69.9489 89.3381 69.9489C88.0502 69.9489 86.9659 69.6742 86.0852 69.125C85.214 68.5663 84.5511 67.8324 84.0966 66.9233C83.642 66.0047 83.4148 64.9962 83.4148 63.8977ZM86.7386 62.3636V63.8977C86.7386 64.7121 86.928 65.4508 87.3068 66.1136C87.6951 66.7765 88.3722 67.108 89.3381 67.108C90.285 67.108 90.9479 66.7765 91.3267 66.1136C91.715 65.4508 91.9091 64.7121 91.9091 63.8977V62.3636C91.9091 61.5492 91.7244 60.8106 91.3551 60.1477C90.9858 59.4848 90.3134 59.1534 89.3381 59.1534C88.3911 59.1534 87.7188 59.4848 87.321 60.1477C86.9328 60.8106 86.7386 61.5492 86.7386 62.3636ZM84.7642 86L104.764 56.9091H108.159L88.1591 86H84.7642Z" fill="#59692B"/>
+          <circle cx="71.5" cy="71.5" r="70.5" stroke="#59692B" stroke-width="2"/>
+        </svg>
+        <p class="row1_discount_header_title">Скидка покупателя</p>
+      </div>
+     <p class="row1_discount_sum">Сумма выкупленных товаров</p>
+      <div class="row1_discount_line">
+        <p class="row1_discount_line_sum">3 257 ₽</p>
+        <div class="row1_discount_line_line"></div>
+        <p class="row1_discount_line_num">4 шт</p>
+      </div>
+    </div>
+  </div>
+<div class="row2">
+  <div class="row2_card1">
+    <h2 class="row2_card1_title">Способы оплаты</h2>
+    <div class="row2_card1_line">
+      <p class="row2_card1_line_text">Основная карта</p>
+      <p class="row2_card1_line_numb">111111******1111 12/36</p>
+    </div>
+  </div>
+    <div class="row2_card1">
+      <h2 class="row2_card1_title">Избранное</h2>
+      <div class="row2_card1_line">
+        <a href="favorite.html" class="row2_card1_line_text link">Смотреть</a>
+      </div>
+    </div>
+      <div class="row2_card1">
+        <h2 class="row2_card1_title">Чеки</h2>
+        <div class="row2_card1_line">
+          <a href="cheks.html" class="row2_card1_line_text link">Смотреть</a>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="column1">
+    <p class="column1_title">Покупателям</p>
+    <p class="column1_text">Как сделать заказ</p>
+    <p class="column1_text">Способы оплаты</p>
+  </div>
+  <div class="column2">
+    <p class="column2_title">Партнерам</p>
+    <p class="column2_text">Продавайте у Нас</p>
+    <p class="column2_text">Перевозчикам</p>
+  </div>
+  <div class="column3">
+    <p class="column3_title">Компания</p>
+    <p class="column3_text">О нас</p>
+    <p class="column3_text">Контакты</p>
+  </div>
+  <div class="column4"></div>
+  <div class="column5"></div>
+  <img src="./pics/telegram_icon.png" alt="" class="footer_telegram">
+  <img src="./pics/inst_icon.png" alt="" class="footer_inst">
+  <img src="./pics/whats_icon.png" alt="" class="footer_whats">
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>

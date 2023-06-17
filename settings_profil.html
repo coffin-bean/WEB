@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header_logo green">
+        <a class="header_logo_svg" href="index.html" >ЛОГОТИП</a>
+    </div>
+    <div class="header_main">
+        <ul class="header_main_lists">
+            <li id="list1" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" id="profil" href="#">Профиль</a></li>
+            <li id="list2" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="catalog.html">Каталог</a></li>
+            <li id="list3" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="deliver.html">Доставка</a></li>
+            <li id="list4" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="favorite.html">Избранное</a></li>
+            <li id="list5" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="aboutUs.html">О нас</a></li>
+            <input class="search" type="text" id="textarea" name="name" placeholder="Введите название товара">
+            <button id="lupa" class="header_main_lists_btn">
+                <svg class="header_main_lists_btn_lupa" >
+                    <circle class="header_main_lists_btn_lupa_details" cx="8" cy="8" r="7"/>
+                    <line class="header_main_lists_btn_lupa_details" x1="13.5091" y1="12.3513" x2="20.6362" y2="18.2284"/>
+                </svg>
+            </button>
+            <div class="header_main_lists_icons">
+                <svg class="header_main_lists_icons_basket" >
+                    <rect width="40" height="42" rx="8" fill="#CAD7AE"/>
+                    <circle class="basket" cx="12" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+                    <circle class="basket" cx="28" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+                    <path class="basket" d="M29.5 27.5C29.5 27.5 11 27.5 9.5 27.5C7.91886 27.5 13 23 13 23C13 23 8.99997 9.00013 7.5 9.00005C6.00003 8.99997 5 9.00005 5 9.00005" stroke="#2C2E2A" stroke-width="2" stroke-linecap="round"/>
+                    <path class="basket" d="M33.5 11.0002C29.5 10.5001 9.50003 11.0003 9.50003 11.0003L13 23.0001H27.5C30 23.0001 35.2888 11.2239 33.5 11.0002Z" fill="#2C2E2A" stroke="#2C2E2A"/>
+                </svg>
+            </div>
+        </ul>
+        <div id="menu" class="sub_menu">
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="notions.html">Уведомления</a></li>
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="profil.html">Личный кабинет</a></li>
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="cheks.html">Финансы</a></li>
+        </div>
+    </div>
+    <div class="header_numb">
+        <div class="header_numb_icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle" cx="20" cy="20" r="19.5" />
+                <path d="M18.7098 14C18.7098 14.9763 17.2098 16 17.2098 16C17.2098 16 15.7099 16.9143 15.7099 17.5001C15.7099 18.0001 15.9866 20.479 17.7098 22.5C19.6395 24.7632 22.2099 25.5 23.7099 25.0001C24.4508 24.7531 24.7098 23.5 24.7098 23.5C25.0973 22.6039 25.7997 22.3535 26.7098 22C27.9969 21.5001 32.2099 27.0001 32.2099 27.5001C32.2099 30.127 30.3382 31.2265 28.7099 32.0001C24.5 34 15.9846 26.7748 14.7098 25.5C13.7099 24.5001 7.50003 17.0001 9 13C9.92237 10.5403 11.7098 8 13.2098 8C14.2098 8 18.7098 12 18.7098 14Z" fill="#FEFDF7" stroke="#FEFDF7"/>
+            </svg>
+        </div>
+        <div class="header_numb_phone">
+            <p class="header_numb_phone_text">
+                +7 (999)999-99-99
+            </p>
+        </div>
+    </div>
+</header>
+<div id="wrapper_p" class="wrapper_p">
+<a href="profil.html" class="bread_crumbs">
+    <svg class="bread_crumbs_arrow">
+        <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7L1 7V9L21 9V7Z" fill="#2C2E2A"/>
+    </svg>
+    <p class="bread_crumbs_text">Назад в профиль</p>
+</a>
+    <div class="main_profile">
+        <img src="./pics/profile_settings.png" alt="" class="main_profile_pic">
+        <div class="main_profile_column1">
+            <h2 class="main_profile_column1_name">Иван Иванов</h2>
+            <a  href="#zatemnenie3" class="main_profile_column1_look">Сменить пароль</a>
+            <div id="look_password" class="main_profile_column1_wrapper"></div>
+            <a href="#zatemnenie2" id="change_password" class="main_profile_column1_change">Посмотреть пароль</a>
+        </div>
+    </div>
+    <div id="zatemnenie2" class="zatemnenie">
+        <div id="okno2" class="modal_window_BankCards">
+            <a href="#" class="modal_window_BankCards_cross">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8258 22.6543L6.22499 9.74771L8.4152 7.43969L22.016 20.3463L19.8258 22.6543ZM8.82119 22.9425L6.51318 20.7523L19.4198 7.15151L21.7278 9.34172L8.82119 22.9425Z" fill="#2C2E2A"/>
+                </svg>
+            </a>
+            <h2 class="modal_window_BankCards_title">Ваш пароль</h2>
+            <p class="modal_window_BankCards_title">123456789</p>
+        </div>
+    </div>
+    <div id="zatemnenie3" class="zatemnenie">
+        <div id="okno3" class="modal_window_BankCards">
+            <a href="#" class="modal_window_BankCards_cross">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8258 22.6543L6.22499 9.74771L8.4152 7.43969L22.016 20.3463L19.8258 22.6543ZM8.82119 22.9425L6.51318 20.7523L19.4198 7.15151L21.7278 9.34172L8.82119 22.9425Z" fill="#2C2E2A"/>
+                </svg>
+            </a>
+            <h2 class="modal_window_BankCards_title">Сменить пароль</h2>
+            <input type="text" class="modal_window_BankCards_numb" placeholder="Введите старый пароль">
+            <input type="text" class="modal_window_BankCards_numb" placeholder="Введите новый пароль">
+            <a href="#" class="window_BankCards_link">Сменить</a>
+        </div>
+    </div>
+    <div class="info">
+        <div class="row1_profil_subtitle">
+            <div class="row1_profil_subtitle_row1">
+                <p class="row1_profil_subtitle_row1_title">Почта</p>
+                <p class="row1_profil_subtitle_row1_title">Телефон</p>
+            </div>
+            <div class="row1_profil_subtitle_row2">
+                <p class="row1_profil_subtitle_row2_title">mailEmail@mail</p>
+                <p class="row1_profil_subtitle_row2_title">+7(911) 111-11-11</p>
+            </div>
+        </div>
+        <div class="nextLine">
+            <h2 class="nextLine_title">Банковские карты</h2>
+            <div class="nextLine_row1">
+                <button class="nextLine_row1_btn_main">
+                    <p class="nextLLine_row1_title">Основная карта</p>
+                    <p class="nextLine_row1_text">111111******1111 12/36</p>
+                </button>
+                <button class="nextLine_row1_btn_main">
+                    <p class="nextLLine_row1_title">Дополнительная карта</p>
+                    <p class="nextLine_row1_text">111111******1111 12/36</p>
+                </button>
+                <a href="#zatemnenie" class="link_for_zatemnenie">
+                    <button class="nextLine_row1_btn_plus">+</button>
+                    <p class="nextLine_row1_BTNtext">Добавить реквизиты</p>
+                </a>
+
+            </div>
+        </div>
+        <div id="zatemnenie" class="zatemnenie">
+            <div id="okno" class="modal_window_BankCards">
+                <a href="#" class="modal_window_BankCards_cross">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8258 22.6543L6.22499 9.74771L8.4152 7.43969L22.016 20.3463L19.8258 22.6543ZM8.82119 22.9425L6.51318 20.7523L19.4198 7.15151L21.7278 9.34172L8.82119 22.9425Z" fill="#2C2E2A"/>
+                </svg>
+                </a>
+                <h2 class="modal_window_BankCards_title">Добавить карту</h2>
+                <input type="text" class="modal_window_BankCards_numb" placeholder="Номер карты">
+                <div class="modal_window_BankCards_footer">
+                    <input type="text" class="modal_window_BankCards_footer_year" placeholder="ММ/ГГ">
+                    <input type="text" class="modal_window_BankCards_footer_cvc" placeholder="CVV/CVC">
+                </div>
+                <a href="#" class="window_BankCards_link">Привязать</a>
+            </div>
+        </div>
+
+        <div class="lineDiscount">
+            <h2 class="nextLine_title">Скидка покупателя</h2>
+            <h2 class="lineDiscount_text">36%</h2>
+        </div>
+        <div class="nextLine">
+            <h2 class="nextLine_title">Данные о покупках</h2>
+            <div class="nextLine_row1">
+                <button class="nextLine_row1_btn_main">
+                    <p class="nextLLine_row1_title green_title">800 ₽</p>
+                    <p class="nextLine_row1_text">Сумма выкупа</p>
+                </button>
+                <button class="nextLine_row1_btn_main">
+                    <p class="nextLLine_row1_title green_title">65</p>
+                    <p class="nextLine_row1_text">Выкупленных товаров</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="nextLine">
+            <h2 class="nextLine_title">Частый адрес доставки</h2>
+            <div class="nextLine_row1">
+                <button class="nextLine_row1_btn_main">
+                    <p class="nextLine_row1_title">г. Санкт-Петербург, ул. Ленина, 56</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="delete_profil">
+            <h2 class="nextLine_title">Удалить профиль</h2>
+            <p class="delete_profil_text">
+                Как только Ваш Профиль будет удален, Вы автоматически выйдете из системы и больше не сможете войти в этот аккаунт.
+                Для удаления профиля вам необходимо будет подтвердить свою личность.
+            </p>
+            <button class="delete_profil_btn">Удалить профиль</button>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="column1">
+        <p class="column1_title">Покупателям</p>
+        <p class="column1_text">Как сделать заказ</p>
+        <p class="column1_text">Способы оплаты</p>
+    </div>
+    <div class="column2">
+        <p class="column2_title">Партнерам</p>
+        <p class="column2_text">Продавайте у Нас</p>
+        <p class="column2_text">Перевозчикам</p>
+    </div>
+    <div class="column3">
+        <p class="column3_title">Компания</p>
+        <p class="column3_text">О нас</p>
+        <p class="column3_text">Контакты</p>
+    </div>
+    <div class="column4"></div>
+    <div class="column5"></div>
+    <img src="./pics/telegram_icon.png" alt="" class="footer_telegram">
+    <img src="./pics/inst_icon.png" alt="" class="footer_inst">
+    <img src="./pics/whats_icon.png" alt="" class="footer_whats">
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>

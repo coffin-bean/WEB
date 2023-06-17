@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="header_logo green">
+        <a class="header_logo_svg" href="index.html" >ЛОГОТИП</a>
+    </div>
+    <div class="header_main">
+        <ul class="header_main_lists">
+            <li id="list1" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" id="profil" href="#">Профиль</a></li>
+            <li id="list2" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="catalog.html">Каталог</a></li>
+            <li id="list3" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="deliver.html">Доставка</a></li>
+            <li id="list4" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="favorite.html">Избранное</a></li>
+            <li id="list5" class="header_main_lists_list"><a class="header_main_lists_list_link ani_header" href="aboutUs.html">О нас</a></li>
+            <input class="search" type="text" id="textarea" name="name" placeholder="Введите название товара">
+            <button id="lupa" class="header_main_lists_btn">
+                <svg class="header_main_lists_btn_lupa" >
+                    <circle class="header_main_lists_btn_lupa_details" cx="8" cy="8" r="7"/>
+                    <line class="header_main_lists_btn_lupa_details" x1="13.5091" y1="12.3513" x2="20.6362" y2="18.2284"/>
+                </svg>
+            </button>
+            <div class="header_main_lists_icons">
+                <svg class="header_main_lists_icons_basket" >
+                    <rect width="40" height="42" rx="8" fill="#CAD7AE"/>
+                    <circle class="basket" cx="12" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+                    <circle class="basket" cx="28" cy="33.0001" r="2.5" fill="#2C2E2A"/>
+                    <path class="basket" d="M29.5 27.5C29.5 27.5 11 27.5 9.5 27.5C7.91886 27.5 13 23 13 23C13 23 8.99997 9.00013 7.5 9.00005C6.00003 8.99997 5 9.00005 5 9.00005" stroke="#2C2E2A" stroke-width="2" stroke-linecap="round"/>
+                    <path class="basket" d="M33.5 11.0002C29.5 10.5001 9.50003 11.0003 9.50003 11.0003L13 23.0001H27.5C30 23.0001 35.2888 11.2239 33.5 11.0002Z" fill="#2C2E2A" stroke="#2C2E2A"/>
+                </svg>
+            </div>
+        </ul>
+        <div id="menu" class="sub_menu">
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="notions.html">Уведомления</a></li>
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="profil.html">Личный кабинет</a></li>
+            <li class="sub_menu_list"><a class="sub_menu_list_lists ani_header" href="cheks.html">Финансы</a></li>
+        </div>
+    </div>
+    <div class="header_numb">
+        <div class="header_numb_icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle" cx="20" cy="20" r="19.5" />
+                <path d="M18.7098 14C18.7098 14.9763 17.2098 16 17.2098 16C17.2098 16 15.7099 16.9143 15.7099 17.5001C15.7099 18.0001 15.9866 20.479 17.7098 22.5C19.6395 24.7632 22.2099 25.5 23.7099 25.0001C24.4508 24.7531 24.7098 23.5 24.7098 23.5C25.0973 22.6039 25.7997 22.3535 26.7098 22C27.9969 21.5001 32.2099 27.0001 32.2099 27.5001C32.2099 30.127 30.3382 31.2265 28.7099 32.0001C24.5 34 15.9846 26.7748 14.7098 25.5C13.7099 24.5001 7.50003 17.0001 9 13C9.92237 10.5403 11.7098 8 13.2098 8C14.2098 8 18.7098 12 18.7098 14Z" fill="#FEFDF7" stroke="#FEFDF7"/>
+            </svg>
+        </div>
+        <div class="header_numb_phone">
+            <p class="header_numb_phone_text">
+                +7 (999)999-99-99
+            </p>
+        </div>
+    </div>
+</header>
+<div id="wrapper" class="wrapper">
+</div>
+<div class="wrapper_p">
+    <h1 class="catalog_title">Каталог</h1>
+
+    <div class="catalog_cards">
+        <a href="product_page2.html" class="catalog_cards_card honey">
+            <!-- <div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar.png" alt="">
+            <p class="catalog_cards_card_title">Мед Цветочный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">556 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page7.html" class="catalog_cards_card honey">
+            <div class="catalog_cards_card_discount">скидка 5%</div>
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar2.png" alt="">
+            <p class="catalog_cards_card_title">Мед Гречишный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">546 ₽</p>
+                <p class="catalog_cards_card_price_oldPrice">576 ₽</p>
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page.html" class="catalog_cards_card honey">
+            <!--<div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar3.png" alt="">
+            <p class="catalog_cards_card_title">Мед Луговой</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">550 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page8.html" class="catalog_cards_card honey">
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar4.png" alt="">
+            <p class="catalog_cards_card_title">Мед Таежный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">561 ₽</p>
+
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+    </div>
+
+    <div class="catalog_cards">
+        <a href="product_page2.html" class="catalog_cards_card honey">
+            <!-- <div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar.png" alt="">
+            <p class="catalog_cards_card_title">Мед Цветочный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">556 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page7.html" class="catalog_cards_card honey">
+            <div class="catalog_cards_card_discount">скидка 5%</div>
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar2.png" alt="">
+            <p class="catalog_cards_card_title">Мед Гречишный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">546 ₽</p>
+                <p class="catalog_cards_card_price_oldPrice">576 ₽</p>
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page8.html" class="catalog_cards_card honey">
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar4.png" alt="">
+            <p class="catalog_cards_card_title">Мед Таежный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">561 ₽</p>
+
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page.html" class="catalog_cards_card honey">
+            <!--<div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar3.png" alt="">
+            <p class="catalog_cards_card_title">Мед Луговой</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">550 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+
+    </div>
+    <div class="catalog_cards">
+        <a href="product_page2.html" class="catalog_cards_card honey">
+            <!-- <div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar.png" alt="">
+            <p class="catalog_cards_card_title">Мед Цветочный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">556 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page8.html" class="catalog_cards_card honey">
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar4.png" alt="">
+            <p class="catalog_cards_card_title">Мед Таежный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">561 ₽</p>
+
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page7.html" class="catalog_cards_card honey">
+            <div class="catalog_cards_card_discount">скидка 5%</div>
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar2.png" alt="">
+            <p class="catalog_cards_card_title">Мед Гречишный</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">546 ₽</p>
+                <p class="catalog_cards_card_price_oldPrice">576 ₽</p>
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+        <a href="product_page.html" class="catalog_cards_card honey">
+            <!--<div class="catalog_cards_card_discount">скидка 5%</div>-->
+            <img  class="catalog_cards_card_pic" src="./pics/catalog_jar3.png" alt="">
+            <p class="catalog_cards_card_title">Мед Луговой</p>
+            <div class="catalog_cards_card_stars">
+                <div class="catalog_cards_card_stars_star">
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#2C2E2A"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                    <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 0L15.9187 8.98278H25.3637L17.7225 14.5344L20.6412 23.5172L13 17.9656L5.35879 23.5172L8.27747 14.5344L0.636266 8.98278H10.0813L13 0Z" fill="#AAAAA5"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog_cards_card_price">
+                <p class="catalog_cards_card_price_newPrice">550 ₽</p>
+                <!-- <p class="catalog_cards_card_price_oldPrice">576 ₽</p>-->
+            </div>
+            <button class="catalog_cards_card_btn">
+                <div class="catalog_cards_card_btn_atributs">
+                    <p class="catalog_cards_card_btn_atributs_text">В корзину</p>
+                    <svg class="catalog_cards_card_btn_atributs_icon">
+                        <path class="white_fill" d="M5.92107 23.6842C7.01111 23.6842 7.89476 22.8005 7.89476 21.7105C7.89476 20.6205 7.01111 19.7368 5.92107 19.7368C4.83104 19.7368 3.94739 20.6205 3.94739 21.7105C3.94739 22.8005 4.83104 23.6842 5.92107 23.6842Z"/>
+                        <path class="white_fill" d="M17.7631 23.6842C18.8531 23.6842 19.7368 22.8005 19.7368 21.7105C19.7368 20.6205 18.8531 19.7368 17.7631 19.7368C16.6731 19.7368 15.7894 20.6205 15.7894 21.7105C15.7894 22.8005 16.6731 23.6842 17.7631 23.6842Z" />
+                        <path  class="white_stroke" d="M19.7368 17.1053C19.7368 17.1053 5.82707 17.1053 4.69925 17.1053C3.51043 17.1053 7.33083 13.9047 7.33083 13.9047C7.33083 13.9047 4.32329 3.94747 3.1955 3.94741C2.0677 3.94736 1.3158 3.94741 1.3158 3.94741" stroke-linecap="round"/>
+                        <path  class="white_stroke white_fill" d="M22.0946 5.43066C19.07 5.05379 3.94739 5.43074 3.94739 5.43074L6.59383 14.4737H17.5578C19.4481 14.4737 23.4471 5.59924 22.0946 5.43066Z"/>
+                    </svg>
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+
+    <section class="also">
+        <h1 class="also_title">
+            Вам может понравится
+        </h1>
+        <div class="also_wrapper">
+            <a href="product_page3.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 15%</p>
+                </div>
+                <img src="./pics/also_jar.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">479 ₽</p>
+                    <p class="also_gallery_price_oldPrice">564 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+            <a href="product_page4.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 12%</p>
+                </div>
+                <img src="./pics/catalog_jar.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">598 ₽</p>
+                    <p class="also_gallery_price_oldPrice">680 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+            <a href="product_page5.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 5%</p>
+                </div>
+                <img src="./pics/catalog_jar2.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">541 ₽</p>
+                    <p class="also_gallery_price_oldPrice">570 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+            <a href="product_page6.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 20%</p>
+                </div>
+                <img src="./pics/catalog_jar4.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">539 ₽</p>
+                    <p class="also_gallery_price_oldPrice">674 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+            <a href="product_page3.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 15%</p>
+                </div>
+                <img src="./pics/also_jar.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">479 ₽</p>
+                    <p class="also_gallery_price_oldPrice">564 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+            <a href="product_page5.html" class="also_gallery">
+                <div class="also_gallery_discount">
+                    <p class="also_gallery_discount_text">скидка 10%</p>
+                </div>
+                <img src="./pics/catalog_jar2.png" alt="" class="also_gallery_pic">
+                <div class="also_gallery_price">
+                    <p class="also_gallery_price_newPrice">430 ₽</p>
+                    <p class="also_gallery_price_oldPrice">650 ₽</p>
+                </div>
+                <p class="also_gallery_seller">
+                    ИП Арутюнян/Мед...
+                </p>
+            </a>
+        </div>
+
+    </section>
+</div>
+<footer class="footer">
+    <div class="column1">
+        <p class="column1_title">Покупателям</p>
+        <p class="column1_text">Как сделать заказ</p>
+        <p class="column1_text">Способы оплаты</p>
+    </div>
+    <div class="column2">
+        <p class="column2_title">Партнерам</p>
+        <p class="column2_text">Продавайте у Нас</p>
+        <p class="column2_text">Перевозчикам</p>
+    </div>
+    <div class="column3">
+        <p class="column3_title">Компания</p>
+        <p class="column3_text">О нас</p>
+        <p class="column3_text">Контакты</p>
+    </div>
+    <div class="column4"></div>
+    <div class="column5"></div>
+    <img src="./pics/telegram_icon.png" alt="" class="footer_telegram">
+    <img src="./pics/inst_icon.png" alt="" class="footer_inst">
+    <img src="./pics/whats_icon.png" alt="" class="footer_whats">
+</footer>
+<script src="./js/script.js"></script>
+</body>
+</html>
