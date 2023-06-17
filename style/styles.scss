@@ -1,4 +1,4 @@
-//font-family: 'Inter', sans-serif;
+
 $white: #FEFDF7;
 $dark_green: #59692B;
 $light_green: #CAD7AE;
@@ -69,7 +69,7 @@ h4{
     background-color: $dark;
     &_phone{
       &_text{
-        margin-top: 8px;
+        margin-top: 11px;
         padding-left: 30px;
         color: $white;
       }
@@ -449,7 +449,7 @@ h4{
   transition: 1s;
 }
 .green{
-  //background-color: $white !important;
+
 }
 .catalog{
   &_header{
@@ -599,7 +599,7 @@ h4{
   background-color: $white;
   height: 40px;
   border-radius: 8px;
-  //border: none;
+  border: 1px solid $dark_green;
   transition: 1s;
 }
 .main_btn:hover{
@@ -880,7 +880,6 @@ h4{
         color: $white;
         height: 54px;
         border-radius: 8px;
-        //border: none;
         border: 2px solid $dark_green;
       }
       &_buttonOP{
@@ -891,7 +890,6 @@ h4{
         height: 54px;
         border-radius: 8px;
         border: 2px solid $dark_green;
-       // border: none;
       }
     }
   }
@@ -1061,9 +1059,8 @@ h4{
     margin-top: 24px;
   }
   &_gallery{
-    margin-left: 40px;
+    margin-left: 48px;
     &_pic{
-      width: 160px;
       height: 163px;
       margin-bottom: 10px;
     }
@@ -1095,10 +1092,10 @@ h4{
 .also_gallery_discount{
   background-color: $dark;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 80px;
   border-radius: 6px;
-  padding: 2px 13px 3px 8px;
-  margin-left: 64px;
+  padding: 2px 4px 3px 8px;
+  margin-left: 114px;
   &_text{
     font-weight: 600;
     color: $white;
@@ -1254,7 +1251,6 @@ h4{
     background: #F2F5E8;
     box-shadow: 3px 0px 8px rgba(89, 105, 43, 0.3), 0px -4px 8px rgba(89, 105, 43, 0.3), 0px 4px 8px rgba(89, 105, 43, 0.3);
     border-radius: 6px;
-   // margin-right: 32px;
     width: 352px;
     height: 94px;
     &_title{
@@ -1284,7 +1280,6 @@ h4{
   height: 33px;
 }
 .row1_profil_column2_header_settenind_pic{
- // margin-left: 17px;
   margin-top: 20px;
   margin-right: 4px;
   width: 32px;
@@ -1297,6 +1292,7 @@ h4{
   display: flex;
   transition: .7s;
   &_arrow{
+    margin-top: 1px;
     width: 21px;
     height: 16px;
     fill: none;
@@ -1310,6 +1306,7 @@ h4{
 }
 
 .bread_crumbs:hover .bread_crumbs_arrow{
+  margin-top: 1px;
   margin-right: 0;
   transition: .7s;
 }
@@ -1335,7 +1332,7 @@ h4{
       border: 2px solid $dark_green;
       font-size: 16px;
       font-weight: 600;
-      padding: 10px 18px;
+      padding: 10px 31px;
       font-family: "Inter", sans-serif;
     }
     &_wrapper{
@@ -1940,6 +1937,7 @@ from{
 .link_for_zatemnenie{
   display: flex;
 }
+/* End Animation*/
 
 #zatemnenie {
   background: rgba(102, 102, 102, 0.6);
@@ -1970,8 +1968,6 @@ from{
   left: 0;
   display: none;
 }
-
-
 #okno {
   width: 300px;
   height: 250px;
@@ -2175,7 +2171,7 @@ from{
     display: flex;
   }
   &_price{
-    //display: flex;
+
   }
   &_price1{
     display: flex;
@@ -2294,5 +2290,27 @@ button{
 }
 .h50{
   width: 100%;
-  height: 150px;
+  height: 50px;
+}
+.master_texts_link:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px #59692B);
+  transition: 1s;
+}
+.master_box_jars{
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px #59692B);
+  transition: 1s;
+}
+.master_texts_link{
+  transition: 1s;
+}
+.master_box_jars{
+  transition: 1s;
+}
+.also_gallery_discount:nth-child(2){
+  margin-left: 20px;
+}
+.also_gallery_seller{
+  text-align: center;
 }
